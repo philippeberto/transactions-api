@@ -9,6 +9,7 @@ import { AccountsModule } from './accounts/accounts.module'
 import { Account } from './accounts/entities/account.entity'
 import { AuthModule } from './auth/auth.module'
 import { TenantModule } from './tenant/tenant.module'
+import { ReportsModule } from './reports/reports.module';
 
 @Module({
   imports: [
@@ -31,7 +32,8 @@ import { TenantModule } from './tenant/tenant.module'
     TransactionsModule,
     AccountsModule,
     AuthModule,
-    TenantModule
+    TenantModule,
+    ReportsModule
   ],
   controllers: [AppController],
   providers: [AppService],
